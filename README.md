@@ -102,3 +102,160 @@ The system follows a clean and structured interface design:
 ---
 
 ## 🏗️ System Architecture
+
+```
+Farmer / Admin (Browser)
+        ↓
+Frontend (HTML + CSS + JavaScript)
+        ↓
+Backend (PHP)
+        ↓
+MySQL Database
+        ↓
+Notification System
+```
+
+---
+
+## 🗂️ Database Structure
+
+### Main Tables
+
+| Table Name | Description |
+|-------------|-------------|
+| users | Stores farmer and admin details |
+| farmer_crops | Stores crop cultivation records |
+| crop_notifications | Stores crop notification alerts |
+| knowledge_base | Stores agricultural knowledge articles |
+
+---
+
+## 📂 Project Structure
+
+```
+smart-cultivation-system/
+│
+├── index.php
+├── login.php
+├── register.php
+├── farmer_dashboard.php
+├── admin_dashboard.php
+│
+├── crop_management.php
+├── knowledge_base.php
+├── notifications_admin.php
+│
+├── db_connection.php
+├── smart_cultivation.sql
+│
+├── PHPMailer-master/
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation Guide
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourusername/smart-cultivation-system.git
+```
+
+---
+
+### 2️⃣ Move Project Folder
+
+Move the folder to:
+
+- `htdocs` (XAMPP)  
+OR  
+- `www` (WAMP)
+
+---
+
+### 3️⃣ Create Database
+
+Open **phpMyAdmin**
+
+Create database named:
+
+```
+smart_cultivation
+```
+
+Import the file **smart_cultivation.sql**
+
+---
+
+### 4️⃣ Configure Database Connection
+
+Update `db_connection.php` file:
+
+```php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "smart_cultivation";
+```
+
+---
+
+### 5️⃣ Run the Project
+
+Open browser:
+
+```
+http://localhost/smart-cultivation-system
+```
+
+---
+
+## 🔄 System Workflow
+
+1. Farmer registers or logs in  
+2. Farmer adds crop cultivation details  
+3. System tracks crop growth stages  
+4. Farmers receive notifications and farming guidance  
+5. Admin manages farmers, crops, and knowledge base  
+6. Farmers follow recommendations for better cultivation  
+
+---
+
+## 🔐 Security Features
+
+- Session-Based Authentication  
+- Password Hashing  
+- Input Validation & Sanitization  
+- Secure Database Queries  
+- Controlled Admin Access  
+
+---
+
+## 🎯 Future Enhancements
+
+- AI-based crop disease detection  
+- Weather-based farming recommendations  
+- IoT-based smart farming sensors  
+- Mobile application integration  
+- Agricultural analytics dashboard  
+
+---
+
+## 👨‍💻 Author
+
+**Chiranjeevi Bathula**  
+BTech Computer Science Engineering Student  
+
+---
+
+## 📜 License
+
+This project is developed for educational purposes.
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
