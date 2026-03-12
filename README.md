@@ -1,157 +1,168 @@
-# 🌱 Smart Cultivation System  
-### AI-Ready Smart Agriculture Management Platform  
+🌱 Smart Cultivation System
+<p align="center"> <img src="https://img.shields.io/badge/PHP-Backend-blue?style=for-the-badge&logo=php"> <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql"> <img src="https://img.shields.io/badge/HTML5-Frontend-red?style=for-the-badge&logo=html5"> <img src="https://img.shields.io/badge/CSS3-Styling-blue?style=for-the-badge&logo=css3"> <img src="https://img.shields.io/badge/JavaScript-Client-yellow?style=for-the-badge&logo=javascript"> </p> <p align="center"> <a href="https://smart-cultivation.kesug.com"> <img src="https://img.shields.io/badge/🚀 Live Demo-Visit Website-green?style=for-the-badge"> </a> </p>
+🚀 Overview
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=google-chrome&logoColor=white)](https://smart-cultivation.kesug.com)  
-[![Tech](https://img.shields.io/badge/Tech-Full%20Stack%20%7C%20Scalable-blueviolet?style=for-the-badge)](#)
-<img width="1883" height="758" alt="Smart Cultivation System Dashboard" src="https://github.com/user-attachments/assets/593afbe2-e835-441e-ab2c-5b3a4adf925f" />
+Smart Cultivation System is a web-based agriculture management platform designed to help farmers digitally manage their farming activities.
 
----
+The platform allows farmers to track crops, monitor growth stages, receive notifications, and access agricultural knowledge to improve farming productivity.
 
-## 🚀 Overview  
+It also includes an Admin Dashboard to manage farmers, crops, notifications, and knowledge base content.
 
-**Smart Cultivation System** is a full-stack agriculture management platform designed to help farmers and administrators digitize farm operations, automate crop monitoring, and streamline agricultural workflows.
+The system aims to make agriculture more organized, data-driven, and accessible through digital technology.
 
-The system provides real-time crop tracking, intelligent notifications, knowledge-based guidance, and role-based dashboards — making agriculture data-driven, efficient, and scalable.
+🌐 Live Demo
 
----
+🔗 Project Live Link
 
-## 🌐 Live Demo  
+https://smart-cultivation.kesug.com
+🎯 Key Features
+👨‍🌾 Farmer Dashboard
 
-🔗 https://smart-cultivation.kesug.com  
+Farmer registration and login
 
----
+Track crop cultivation details
 
-## 🏗 System Architecture  
+Monitor crop growth stages
 
+Receive farming notifications
 
-┌─────────────────────┐        HTTP Requests        ┌────────────────────────┐
-│   Farmer Dashboard  │ ─────────────────────────▶ │                        │
-└─────────────────────┘                             │                        │
-                                                     │                        │
-┌─────────────────────┐        HTTP Requests        │     PHP Backend        │
-│    Admin Dashboard  │ ─────────────────────────▶ │  (Business Logic +     │
-└─────────────────────┘                             │   Authentication +     │
-                                                     │   Access Control)     │
-                                                     │                        │
-                                                     └───────────┬────────────┘
-                                                                 │
-                                                                 │ SQL Queries
-                                                                 ▼
-                                                     ┌────────────────────────┐
-                                                     │     MySQL Database     │
-                                                     │   (Persistent Storage) │
-                                                     └────────────────────────┘
-                                                                 │
-                                                                 │ Event Triggers
-                                                                 ▼
-                                                     ┌────────────────────────┐
-                                                     │   PHPMailer Service    │
-                                                     │ (SMTP Email Delivery)  │
-                                                     └────────────────────────┘
+View agricultural knowledge base
 
+Update farmer profile information
 
----
+🛠 Admin Dashboard
 
-## 🎯 Key Features  
+Manage farmer accounts
 
-### 👨‍🌾 Farmer Panel  
-- Real-time crop monitoring  
-- Submit progress reports  
-- View growth stages  
-- Automated email notifications  
-- Activity alerts  
+Add / edit / delete crops
 
-### 🛠 Admin Panel  
-- Add / edit / delete crops  
-- Farmer account management  
-- Crop stage updates  
-- Automated notifications  
-- Knowledge base management  
+Update crop growth stages
 
-### 📩 Smart Notification Engine  
-- SMTP-based email alerts using PHPMailer  
-- Secure and event-driven notifications  
+Send notifications to farmers
 
----
+Manage knowledge base articles
 
-## 🧠 Machine Learning Integration  
+📚 Agricultural Knowledge Base
 
-The crop disease detection ML model is deployed separately as a microservice for scalability and performance.
+The system contains crop guidance including:
 
-Repository: **crop-disease-detection-ml**
+Growth stages
 
----
+Fertilizer schedules
 
-## 🛠 Tech Stack  
+Irrigation schedules
 
-### Backend  
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![PHPMailer](https://img.shields.io/badge/PHPMailer-ff69b4?style=for-the-badge)
+Crop problems & solutions
 
-### Database  
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+Supported crops include:
 
-### Frontend  
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+Tomato
 
-### Tools & Deployment  
-![XAMPP](https://img.shields.io/badge/XAMPP-ff8c00?style=for-the-badge)
-![InfinityFree](https://img.shields.io/badge/InfinityFree-00bfff?style=for-the-badge)
+Groundnut
 
----
+📩 Notification System
 
-## 📁 Project Structure  
+Automated crop alerts
 
+Activity reminders for farmers
 
-smart-cultivation-system/
-├── PHPMailer-master/
-│   └── ... (PHPMailer library files)
-├── add_crop.php
-├── admin_add_crop.php
+Notification status tracking
+
+🛠 Tech Stack
+Technology	Purpose
+HTML5	Frontend structure
+CSS3	Styling and layout
+JavaScript	Client-side interactions
+PHP	Backend logic
+MySQL	Database management
+PHPMailer	Email notifications
+XAMPP / InfinityFree	Hosting environment
+Git & GitHub	Version control
+🏗 System Architecture
+Farmer Dashboard / Admin Dashboard
+                │
+                ▼
+            PHP Backend
+     (Authentication & Logic)
+                │
+                ▼
+          MySQL Database
+                │
+                ▼
+        Notification System
+         (Email / Alerts)
+📁 Project Structure
+smart-cultivation-system
+│
 ├── admin_dashboard.php
-├── admin_delete_crop.php
-├── admin_update_stage.php
-├── crop_management.php
-├── db_connection.php
-├── delete_crop.php
-├── delete_farmer.php
-├── edit_crop.php
-├── edit_farmer.php
 ├── farmer_dashboard.php
-├── farmer_reports.php
-├── farmers_admin.php
-├── fetch_notifications.php
-├── index.php
-├── knowledge_base.php
-├── knowledge_base_admin.php
-├── languages/
 ├── login.php
-├── logout.php
-├── mark_notification.php
-├── notifications_admin.php
 ├── register.php
+├── crop_management.php
+├── knowledge_base.php
+├── notifications_admin.php
+├── db_connection.php
 ├── smart_cultivation.sql
-├── toggle_farmer.php
-├── update_profile.php
-├── update_stage.php
-├── .gitmodules
-├── README.md
-└── ...
+│
+├── PHPMailer-master
+│
+└── README.md
+⚙ Installation
+1️⃣ Clone Repository
+git clone https://github.com/YOUR_USERNAME/smart-cultivation-system.git
+2️⃣ Move Project
 
----
+Place project folder inside:
 
-## ⚙ Installation  
+xampp/htdocs/
+3️⃣ Create Database
 
-1. Clone the repository:  
-```bash
-git clone https://github.com/joyswapnilrajparadeshi-cmd/smart-cultivation-system.git
+Open phpMyAdmin
 
-Import smart_cultivation.sql into MySQL.
+Create database:
 
-Update db_connection.php with your database credentials.
+smart_cultivation
+4️⃣ Import Database
 
-Start XAMPP / WAMP / LAMP.
+Import:
 
-Open in browser: http://localhost/smart-cultivation-system/
+smart_cultivation.sql
+5️⃣ Configure Database
+
+Edit db_connection.php
+
+$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "smart_cultivation";
+6️⃣ Start Server
+
+Start Apache and MySQL in XAMPP.
+
+7️⃣ Run Project
+
+Open browser:
+
+http://localhost/smart-cultivation-system
+🎯 Project Purpose
+
+The Smart Cultivation System was developed to help farmers adopt digital tools for managing crops and agricultural activities.
+
+The system simplifies crop tracking and provides knowledge-based guidance to help farmers make better farming decisions.
+
+👨‍💻 Author
+
+Chiranjeevi Bathula
+B.Tech Computer Science Student
+
+🌟 Future Enhancements
+
+AI-based crop disease detection
+
+Weather-based farming recommendations
+
+Mobile application integration
+
+IoT smart agriculture sensors
+
+⭐ If you like this project, please star the repository.
