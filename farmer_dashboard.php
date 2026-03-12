@@ -1277,17 +1277,6 @@ body::before {
     </ul>
 </div>
 
-<!-- Crop Disease Recognition Section -->
-<div class="section" id="disease-recognition">
-    <h2><i class="fas fa-microscope"></i> <?php echo $translations['crop_disease_recognition'] ?? 'Crop Disease Recognition'; ?></h2>
-    <p style="color: var(--text-light); margin-bottom: 20px;">
-        <?php echo $translations['disease_recognition_desc'] ?? 'Use this AI-powered tool to identify potential diseases in your crops by uploading leaf images. Get instant diagnosis and treatment recommendations.'; ?>
-    </p>
-    <button onclick="window.location.href='http://127.0.0.1:5000'" class="disease-btn">
-        <i class="fas fa-camera"></i>
-        <?php echo $translations['recognize_disease'] ?? 'Recognize Disease'; ?>
-    </button>
-</div>
 
 <!-- Knowledge Base Section -->
 <div class="section" id="knowledge">
